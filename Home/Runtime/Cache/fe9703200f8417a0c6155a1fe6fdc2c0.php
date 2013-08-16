@@ -1,0 +1,27 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="__CSS__/login.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/common.css" />
+	<script type="text/javascript" src = "__JS__/login.js"></script>
+</head>
+<body>
+	<!--<div id = "topHeader">Marmoset</div>-->
+    <div class = "logo"><img src="__IMAGE__/logo/sign2.png"></div>
+	<div class = "login">	
+        <h1>SHARE YOUR KNOWLEDGE</h1>
+	    <div id = "login_session">
+             <form action = "__URL__/login" method = "post" name = "login">
+             	<div id = "login_input">
+                 	<div id = "in">Username:<input type = "text" name = "username" id = "txt"></div>
+                	<div id = "in">PassWord:<input type = "password" name = "password" id = "txt"></div>
+                	<div id = "in">验证码:<img src="__APP__/Public/verify" onclick='this.src=this.src+"?"+Math.random()'/><input type="text" name="code" id = "txt"></div>
+            	</div>
+    	     	<!--<span style = "display:block;width:100px;height:30px;background-color:#dd9191;margin:auto;" onclick = "submitUserData()"></span>-->
+    	     	<input type = "button" value = "sign in" onclick = "submitUserData()" id = "btn">
+                <input type = "button" value = "sign up" onclick = "location.href='__APP__/Join'" id = "btn" >
+            </form>	
+	    </div>
+    </div>
+</body>
+</html>

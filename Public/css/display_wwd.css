@@ -1,0 +1,58 @@
+body{
+	margin:0;
+	padding:0;
+}
+div.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+div{
+	overflow:hidden;
+}
+div#part1{
+	height:800px;
+	background-color:#555555;
+}
+
+div#part1-header{
+	height:120px;
+	text-align:center;
+	margin-top:15px;
+}
+
+div#part1-content{
+	height:600px;
+	width:70%;
+	font-family: "opensans" "微软雅黑";
+	color:#D67E22;
+}
+p{
+	padding-left:26px;
+}
+p.hehe{
+	font-size:20px;
+}
+span.logo2{
+	font-family:"sosa";
+}
+
+
+div#part2{
+	height:700px;
+	background-color: #99CCF2;
+}
+
+div#part2-header{
+	height:100px;
+	text-align:center;
+	margin-top:15px;
+	color:#FFFFFF;
+	font-size: 30px;
+	font-family:"pacifico";
+}
+div#part2-content1{
+	text-align:center;
+}
+div#part2-content2{
+	text-align:center;
+}

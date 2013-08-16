@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+	<table border = "1px" align = "center" width = "90%">
+		<th>ID</th>
+		<th>Name</th>
+		<th>Password</th>
+		<th>Operation</th>
+		<volist name = "AdministratorData" id = "Administrator">
+			<tr align="center">
+			<td><{$Administrator['id']}></td>
+			<td><{$Administrator['username']}></td>
+			<td><{$Administrator['password']}></td>
+			<td><a href = "__URL__/modify/id/<{$Administrator['id']}>">edit</a> | <a href = "__URL__/del/id/<{$Administrator['id']}>">delete</a></td>
+			</tr>
+		</volist>
+	</table>
+</body>
+</html>

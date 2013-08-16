@@ -1,0 +1,33 @@
+.ke-container-edit {
+        display: block;
+        background-color: #27ae60;
+        color: #fff;
+        overflow: hidden;
+       	font-size: 40px;
+}
+.ke-container-edit .ke-toolbar {
+        border-bottom: 1px solid #CCC;
+        background-color: #FFF;
+        padding: 2px 5px;
+        overflow: hidden;
+        zoom:1;
+}
+/* statusbar */
+.ke-container-edit .ke-statusbar {
+	display:none;
+}
+/* menu */
+.ke-edit-iframe,
+.ke-edit-textarea {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+.ke-edit-textarea{
+	font: 18px/1.5 "微软雅黑","Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	color: #fff;
+	overflow: auto;
+	resize: none;
+}
+

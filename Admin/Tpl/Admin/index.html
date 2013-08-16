@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Marmoset管理中心</title>
+	<load href='__JS__/jquery.min.js' />
+	<load href='__CSS__/transdmin.css' />
+	<script>
+	$(function(){
+		$('.subMenuTitle a[href="#"]').next('ul').hide();
+		$('.subMenuTitle a[href="#"]').click(function() {
+			$(this).next('ul').toggle();
+		});
+	})
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+        <ul id="mainNav">
+        	<li class="logo">Marmoset管理中心</li>
+        	<li class="logout"><a href="#">xxxxx</a><a href="#">退 出</a></li>
+        </ul>
+        <!-- // #end mainNav -->
+        <div class="clear"></div>
+        <div id="containerHolder">
+			<div id="container">
+        		<div id="sidebar">
+                	<ul class="sideNav">
+			        	<li class="subMenuTitle"><a href="#">用户管理</a>
+			        	<ul>
+				            <li class="subMenu"><a href="#" target="right">用户信息</a></li>
+				            <li class="subMenu"><a href="#" target="right">搜索用户</a></li>
+				            <li class="subMenu"><a href="#" target="right">添加用户</a></li>
+			            </ul>
+			            </li>
+                    </ul>
+                    <ul class="sideNav">
+			        	<li class="subMenuTitle"><a href="#">笔记管理</a>
+			        	<ul>
+				            <li class="subMenu"><a href="../Note/page.html" target="right">笔记信息</a></li>
+				            <li class="subMenu"><a href="../Note/search.html" target="right">搜索笔记</a></li>
+				            <li class="subMenu"><a href="../Note/add.html" target="right">添加笔记</a></li>
+			            </ul>
+			            </li>
+                    </ul>
+                    <ul class="sideNav">
+			        	<li class="subMenuTitle"><a href="#">公告管理</a>
+			        	<ul>
+				            <li class="subMenu"><a href="#" target="right">公告信息</a></li>
+				            <li class="subMenu"><a href="#" target="right">搜索公告</a></li>
+				            <li class="subMenu"><a href="#" target="right">添加公告</a></li>
+			            </ul>
+			            </li>
+                    </ul>
+                    <ul class="sideNav">
+			        	<li class="subMenuTitle"><a href="#">管理员设置</a>
+			        	<ul>
+				            <li class="subMenu"><a href="#" target="right">管理员信息</a></li>
+				            <li class="subMenu"><a href="#" target="right">添加管理员</a></li>
+				            <li class="subMenu"><a href="#" target="right">关于我们</a></li>
+			           </ul>
+			           </li>
+                    </ul>
+                </div>
+                <!-- // #sidebar -->
+                <div id="page">
+	                <iframe  width="1010px" scrolling="auto" height="500px" allowtransparency="true" style="border: medium none;" id="rightMain" name="right">
+	                </iframe>
+                </div>
+                <!-- // #page -->
+                <div class="clear"></div>
+            </div>
+            <!-- // #container -->
+        </div>	
+        <!-- // #containerHolder -->
+    </div>
+    <!-- // #wrapper -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+div#frame{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 40px;
+	text-align: left;
+	background-color:#fff;
+}
+div#title{
+	width: 100%;
+	height: 200px;
+	background-color: #27ae60;
+	overflow: hidden;
+	font-family: "Collator";
+	text-align: center;
+	font-size: 60px;
+	color: #fff;
+	line-height: 100px;
+}
+
+div#title div.icon{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: #1abc9c;
+	margin-top: 12px;
+	font-family: "RaphaelIcons";
+	font-size: 70px;
+	line-height: 100px;
+	color:#fff;
+	margin-left: 46%;
+	text-align: center;
+}
+div#title div.icon:hover{
+	background-color: #e67e22;
+	height: 120px;
+	width: 120px;
+	border-radius: 120px;
+	font-size: 100px;
+	line-height: 120px;
+	margin-left: 46%;
+}
+
+div#frame div#main{
+	width: 100%;
+	background-color:#fff;
+}
+
+div#frame div#main div#content{
+	width: 61.8%;
+	color: #252525;
+	background-color: #fff;
+	margin-bottom: 80px;
+	margin-top: 80px;
+	padding: 10px;
+	border-radius: 4px;
+	font-family: "opensans" "华文细黑";
+}
+
+div.cHeader{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color:#adadad;
+	font-size: 25px;
+}
+div.cContent{
+	width: 100%;
+	font-size: 15px;
+	color: #252525;
+
+}
+div.cFooter{
+	width: 100%;
+	height: 50%;
+	text-align: right;
+	color: #e74c3c;
+	font-family: "Aaargh" "华文细黑";
+	font-size: 16px;
+}

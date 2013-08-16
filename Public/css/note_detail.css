@@ -1,0 +1,16 @@
+body{margin:0;padding:0;background-color: #ECF0F1;color:#252525;}
+div#detail-frame{margin-top:60px;width:800px;min-height:100%;}
+div#detail-title{width:100%;text-align: center;line-height: 50px;font-family: "opensans" "华文细黑";
+font-size:20px;border-bottom:1px dashed #ccc;
+}
+div#detail-content{padding: 20px;font-size: 15px;font-family: "opensans" "微软雅黑";
+line-height: 22px;min-height: 400px;border-bottom: 1px solid #ccc;}
+div#detail-footer{text-align: center;height:100px;}
+div#detail-footer span.icon{font-family: "sosa";font-size:30px;color:#34495E;}
+div#detail-footer span.word{font-family: "opensans" "微软雅黑";font-size:15px;}
+div#detail-admire{height:600px;margin-top:60px;width:100%;text-align:center;
+}
+div#detail-admire span.icon{font-family:"sosa";font-size:100px;color:#121232;}
+div#detail-admire span.word1{font-family:"delicious";font-size:120px;color:#2ecc71;}
+div#detail-admire span.word2{font-family:"opensans";font-size:100px;color:#252511;}
+div#detail-admire span.word3{font-family:"opensans";font-size:70px;color:#111111;}

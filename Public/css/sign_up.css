@@ -1,0 +1,200 @@
+body{
+	background-color: #2C3E50;
+	margin: 0 auto;
+	padding: 0;
+}
+
+@font-face{
+	font-family: CaviarDreams;
+	src: url('../assets/font/CaviarDreams.ttf');
+}
+
+@font-face{
+	font-family: ArchitectsDaughter;
+	src: url('../assets/font/ArchitectsDaughter.ttf');
+}
+
+div.logo{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "pacifico", "consolas";
+	font-size: 30px;
+}
+
+div#sign_up{
+	color: #FFFFFF;
+	margin: 0 auto;
+	width: 800px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+h1{
+	font-family: CaviarDreams;
+	width: 100%;
+	font-size: 300%;
+	color: #DCDCDC;
+	letter-spacing: 10px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-left: 10px;
+	transition: color 0.5s;
+	cursor: default;
+}
+
+h1:hover{
+	color: #FFFFFF;
+}
+
+div#sign_up_session{
+	margin: 0 auto;
+	background-color :#555;
+	display:none;
+	overflow:hidden;
+}
+
+div#sign_up_area{
+	width:50%;
+	float:left;
+}
+
+div#sign_up_warm{
+	width:40%;
+	float:left;
+	text-align:center;
+	color:#FFFFFF;
+	margin-top: 10%;
+	font-size:40px;
+	padding-left:50px;
+	font-family: "delicious";
+}
+span.number{
+	color: #993232;
+	font-size:150px;
+}
+div#sign_up_form{
+	margin-left: 14%;
+	margin-top: 5%;
+	color:#FFFFFF;
+	/*border-right:1px solid #fff;*/
+}
+
+div.display{
+	text-align: center;
+	position:relative;
+}
+
+div.display span.icon{
+	font-family:"sosa";
+	font-size:40px;
+	color:#C0392B;
+	cursor:pointer;
+	transition: color 0.5s;
+}
+
+div.display span.icon:hover{
+	color:#DDDDDD;
+}
+
+div#sign_footer{
+	height:120px;
+	text-align:center;
+	color: #fff;
+	font-size:30px;
+	font-family: "opensans";
+}
+
+table.sign_up_table{
+	/*border:1px solid #999;*/
+	padding:30px;
+}
+
+table.sign_up_table tr{
+	position: relative;
+}
+
+table.sign_up_table td{
+	height:40px;
+	line-height: 30px;
+	font-size: 14px;	
+	position: relative;
+}
+
+td.bg{
+	transition: background-color 0.5s;
+	text-align:center;
+	padding:5px;
+	cursor:default;
+}
+
+td.bg:hover{
+	background-color:#aa4623;
+}
+
+input.sign_up,input.sign_up_shorten{
+	width:300px;
+	height:25px;
+	padding-left: 10px;
+	margin-left: 20px;
+	font-family:"opensans" "微软雅黑";
+	color:#fff;
+	font-size:15px;
+	border : 0px;
+	background-color:#E74C3C;
+}
+
+input.sign_up_shorten{
+	width:200px;
+}
+
+div.join{
+	width:40%;
+	height:60px;
+	color:#fff;
+	background-color:#E74C3C;
+	text-align:center;
+	line-height:60px;
+	font-family: "opensans";
+	cursor:pointer;
+	font-size:25px;
+}
+
+div#apartment{
+	position:absolute;
+	left:100%;
+	top:-120px;
+	height:150px;
+	width:160px;
+	overflow-y: scroll;
+	background-color:#16A085;
+	display:none;
+	padding-left:10px;
+}
+
+
+ul#apartul{
+	margin:0;
+	padding:0;
+}
+
+ul#apartul li{
+	list-style:none;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+
+ul#apartul li:hover{
+	background-color:#5FB5EC;
+}
+
+span.log a{
+	font-size: 15px;
+	color:#FFFFFF;
+	text-decoration: none;
+	display:block;
+	background-color: #009FE6;
+	padding: 10px;
+	width:150px;
+	margin-left:auto;
+	margin-right:auto;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="__CSS__/common.css" />
+	<link rel="stylesheet" type="text/css" href="__CSS__/my_note.css" />
+	<script type="text/javascript" src = "__JS__/common.js"></script>
+	<script type="text/javascript" src = "__JS__/my_note.js"></script>
+	<script type="text/javascript" src = "__JS__/jquery-1.9.0.min.js"></script>
+	</head>
+	<body>
+		<div id = "left_side_bar">
+			<div id = "header">
+				<div class = "logo">Marmoset</div>
+			</div>
+			<div id = "user">
+				<div class = "userPhoto center"><img src="__IMAGE__/User/zard.jpg" width="160px" height="160px" />
+				</div>
+				<span class="plain center transform"><{$user['user']['username']}><br /></span>
+				<span class = "plain center transform"><{$user['aprt']['name']}><br /></span>
+				<span class="plain center transform"><{$user['school']['name']}><br /></span>
+			</div>
+			<div id = "pages"></div>
+		</div>
+		<div id = "main">  
+			<volist name = "data" id = "list">
+				<div class = "mynote">
+					<div class = "title"> <span class = "date"><span class="adjust"><{$list['note']['time']}></span></span><{$list['note']['title']}></div>
+					<div class = "content">
+					<{$list['note']['content']}>
+					</div>
+					<div class = "footer">
+						<div class = "operation">
+							<span class = "op hand transform" onclick="Ajax_delete(<{$list['note']['id']}>,this)">删除</span>
+							<span class = "op hand transform" onclick='window.location = "__URL__/update/id/<{$list['note']['id']}>"'>编辑</span>
+							<span class = "op hand transform" onclick='window.location = "__URL__/detail/id/<{$list['note']['id']}>"'>查看</span>
+						</div>
+						<div class = "info">
+							<span>Knowledge is not power until it is shared By Johnbug</span>
+						</div>
+					</div>
+				</div>
+			</volist>
+		</div>
+	</body>
+</html>

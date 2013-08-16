@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><html><head></head><body><form name="user" action = "__URL__/create" method = "post">		name:<input type = "text" name = "name" >		password:<input type = "text" name = "password">		email:<input type = "text" name = "email">		apartment:<input type = "text" name = "apartment_id"><input type = "submit" value = "sign up"></form></body></html>

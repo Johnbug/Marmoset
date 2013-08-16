@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="__CSS__/common.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/bubble.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/annouce_idx.css">
+<script type="text/javascript" src = "__JS__/common.js"></script>
+<script type="text/javascript" src = "__JS__/Annouce_idx.js"></script>
+<script type="text/javascript" src = "__JS__/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+	<div id = "topHeader">
+		<div id = "main"><span class = "logo">Marmoset</div>
+		<div id = "user"><span class = "usermata"><{$name}>
+		<ul id = "userop">
+		<li><a href = "__APP__/Login/logout">logout</a></li>
+		</ul>
+		</span></div>
+	</div>
+	<div id = "frame">
+		<div id = "nav">
+			<div class = "icon" onclick = "window.location = '__APP__/Annouce/edit'">
+			?</div>
+			<div class = "icon" onclick = "window.location = '__APP__/Annouce/my_annoucement'">E</div>
+			<div class = "icon">M</div>
+		</div>
+		<div id = "content">
+			<div id = "message">
+				<ul id = "mes_dialog">
+				<volist name = "aList" id = "list">
+				<li><div class = "triangle"></div>
+					<div class = "lHeader"><h3><{$list['annoucement']['title']}></h3></div>
+					<div class = "lContent">
+					<{$list['annoucement']['content']}>
+					</div>
+					<div class = "readmore hand transform" onclick = "window.location = '__URL__/detail/id/<{$list['annoucement']['id']}>'">read more</div>
+					<div class = "lFooter">
+					author:<{$list['user']['username']}>from :<{$list['apartment']['name']}> <{$list['school']['name']}><br/>
+					</div>
+				</li>
+				</volist>
+				</ul>
+			</div>
+			<div style = "clear:both"></div>
+		</div>
+		<div style = "clear:both"></div>
+	</div>
+	<div id = "footer">
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+	
+</head>
+<body>
+	<table border = "1px" align = "center" width = "800">
+		<th>ID</th>
+		<th>Name</th>
+		<th>Apartment</th>
+		<th>Operation</th>
+		<volist name = "UserData" id = "User">
+			<tr>
+			<td><{$User['id']}></td>
+			<td><{$User['username']}></td>
+			<td><{$User['apartment']}></td>
+			<td> <a href = "__URL__/modify/id/<{$User['id']}>">edit</a> | <a href = "__URL__/del/id/<{$User['id']}>">delete</a></td>
+			</tr>
+		</volist>
+		<a href  = "__URL__/add">add</a>
+	</table>
+</body>
+</html>

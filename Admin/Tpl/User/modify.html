@@ -1,0 +1,15 @@
+<html>
+<head>
+	
+</head>
+<body>
+	<form action = "__URL__/update" method = "post">
+		<input type='hidden' name='id' value="<{$data['id']}>"/>
+		name:<input type = "text" name = "username" value = '<{$data['username']}>'>
+		password:<input type = "text" name = "password" value = '<{$data['password']}>'>
+		email:<input type = "text" name = "email" value = '<{$data['email']}>'>
+		apartment:<input type = "text" name = "apartment_id" value = '<{$data['apartment_id']}>'>
+		<input type = "submit" value = "modify">
+	</form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+	background-color: #333;
+}
+
+div.logo{
+	text-align: center;
+	padding-top: 10px;
+}
+
+div.login{
+	text-align: center;
+	margin-top: 0px;
+	padding: 0;
+}
+
+h1{
+	font-family: "FoglihtenNo03";
+	color: #FFFFFF;
+	letter-spacing: 20px;
+	font-size: 540%;
+	margin: 120px 0 40px 0;
+	padding-left: 20px;
+}
+
+div#login_session{
+	font-size: 130%;
+}
+
+div#in{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 300px;
+	color: #FFFFFF;
+}
+
+input#txt{
+	width: 300px;
+	height: 20px;
+	margin-top: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-bottom: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	transition: background-color 1s;
+}
+
+#txt:focus{
+	background-color: #FFFFFF;
+}
+
+input#btn{
+	padding: 5px 10px;
+	margin: 10px 20px;
+	font-size: 70%;
+	font-family: "ArchitectsDaughter";
+	background-color: #6699CC;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 10px;
+}

@@ -1,0 +1,93 @@
+body{
+	background-color: #ecf0f1;
+}
+
+div#frame{
+	margin-top: 50px;
+	width:900px;
+	height: 500px;
+}
+
+div#navi{
+	width:100%;
+	
+}
+
+ul#ul-navi{
+	
+}
+ul{
+	margin:0;
+	padding:0;
+}
+
+ul#ul-navi li {
+	list-style: none;
+	float:left;
+	width:300px;
+	height:100px;
+	font-size:50px;
+	font-family: "RaphaelIcons";
+	text-align: center;
+	color: #C0392B;
+}
+
+ul#ul-navi li span{
+	cursor: pointer;
+}
+
+div#content{
+	margin-top: 10px;
+	width:900px;
+}
+
+ul#con-content{
+	
+}
+
+ul#con-content li{
+	list-style: none;
+	height:80px;
+	width:100%;
+	overflow: hidden;
+	
+	color:#252525;
+	font-family:"opensans" "华文细黑";
+	border-top: 1px dashed #CCCCCC;
+}
+
+ul#con-content li span{
+	height:50px;
+	margin-top:15px;
+	float:left;
+	line-height: 50px;
+}
+
+ul#con-content li span.icon{
+	border-right: 1px solid #ccc;
+	width:100px;
+	float:left;
+	text-align: center;
+}
+ul#con-content li span.title{
+	padding-left:50px;
+	border-right: 1px solid #ccc;
+	width: 600px;
+}
+ul#con-content li span.op{
+	width:140px;
+	font-family: "RaphaelIcons";
+	font-size:30px;
+	text-align: center;
+	letter-spacing:5px;
+}
+ul#con-content li span.op a{
+	text-decoration: none;
+	color:#C0392B;
+}
+ul#con-content li span.op a:hover{
+	color:#D67E22;
+}
+span.block{
+	display:block;
+}

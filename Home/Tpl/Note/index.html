@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="__CSS__/common.css" />
+	<link rel="stylesheet" type="text/css" href="__CSS__/note_idx.css" />
+	<script type="text/javascript" src = "__JS__/common.js"></script>
+	<script type="text/javascript" src = "__JS__/note_idx.js"></script>
+	<script type="text/javascript" src = "__JS__/jquery-1.9.0.min.js"></script>
+	</head>	
+	<body>
+		<header>
+		<div id = "topHeader">
+		<div id = "main"><span class = "logo">Marmoset</div>
+		<div id = "user"><span class = "usermata"><{$name}>
+		<ul id = "userop">
+		<li><a href = "__APP__/Login/logout">logout</a></li>
+		</ul>
+		</span></div>
+		</div>
+		</header>
+		<div id = "frame" class = "center">
+			<div id = "navi" class="center">
+				<ul id = "ul-navi">
+					<li><span onclick='window.location = "__URL__/edit"'>></span></li>
+					<li><span onclick='window.location = "__URL__/My_Note"'>E</span></li>
+					<li><span>_</span></li>
+					<div style="clear: both"></div>
+				</ul>
+			</div>	
+			<div id = "content">
+				<ul id = "con-content">
+					<volist name = "data" id = "list">
+					<li>
+						<span class =  "icon block"><{$list['note']['time']}></span>
+						<span class = "title block"><{$list['note']['title']}></span>
+						<span class = "op block"><a href = "__URL__/detail/id/<{$list['note']['id']}>">:</a><span style = 'font-size:14px;float:none;font-family: "微软雅黑"'><{$list['class']['name']}></spamn> </span>
+						
+					</li>
+					</volist>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>

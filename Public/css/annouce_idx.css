@@ -1,0 +1,89 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+div#frame{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 40px;
+	text-align: left;
+}
+
+div#nav{
+	width: 100%;
+	height: 200px;
+	background-color: #c0392b;
+	overflow: hidden;
+}
+
+div#content{
+	width: 100%;
+	background-color: #34495e;
+	float: left;
+	padding-bottom: 60px;
+}
+
+div#nav div.icon{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background-color: #e74c3c;
+	margin-top: 12px;
+	float: left;
+	font-family: "RaphaelIcons";
+	font-size: 100px;
+	line-height: 150px;
+	color:#fff;
+	margin-left: 17%;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	transition-property: background-color height width border-radius;
+	transition-duration: 0.4s;
+	transition-timing-function: linear;
+	
+	/* Firefox 4 */
+	-moz-transition-property:background-color height width border-radius;
+	-moz-transition-duration:0.4s;
+	-moz-transition-timing-function:linear;
+	
+	/* Safari 和 Chrome */
+	-webkit-transition-property:background-color height width border-radius font-size line-height margin-left;
+	-webkit-transition-duration:0.4s;
+	-webkit-transition-timing-function:linear;
+	
+}
+div#nav div.icon:hover{
+	background-color: #e67e22;
+	height: 180px;
+	width: 180px;
+	border-radius: 180px;
+	font-size: 120px;
+	line-height: 180px;
+	margin-left: 15%;
+}
+
+div#nav div.icon span.des{
+	
+	color: #fff;
+	top:59%;
+	left: 0;
+	font-family: "Collator";
+	font-size: 10px;
+	display: block;
+	position: absolute;
+}
+
+
+
+/*
+	主页	：	index
+	公告新建：	edit
+	个人主页：	my_annoucement/GET
+	课堂主页：  class/GET
+	公告详情:   detail/GET
+	学院公告：	apartment/GET
+	公告编辑：	同新建。
+*/

@@ -1,0 +1,46 @@
+/* Basic  ---------------------------------------- */
+
+.clear { clear: both; }
+
+body{
+	margin: 0;
+	padding:0;
+}
+
+#wrapper {
+	margin: 0 auto;
+	text-align: left;
+	width: 100%;
+	margin-top: 40px;
+}
+
+#container {
+	background-color: #ecf0f1;
+}
+/* Sidebar ---------------------------------------- */
+
+#sidebar {
+	width: 25%;
+	float: left;
+}
+
+#sidebar .sideNav li {
+	text-align: center;
+}
+
+#sidebar .sideNav li a {
+	overflow: hidden;
+	color:#252525;
+	font-family: "pacifico", "consolas";
+	text-decoration: none;
+	line-height: 80px;
+}
+
+#sidebar .sideNav .subMenuTitle a {
+	font-size: 23px;
+}
+
+#sidebar .sideNav .subMenu a {
+	font-size: 18px;
+}
+

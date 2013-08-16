@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>笔记信息</title>
+	</head>
+	<body>
+		<table style="border-spacing:0" bordercolor="#ddd" border="1" width="980px">
+			<tr>
+				<th width='7%'>笔记ID</th>
+				<th width='10%'>笔记标题</th>
+				<th width='34%'>笔记内容</th>
+				<th width='20%'>笔记时间</th>
+				<th width='7%'>用户ID</th>
+				<th width='7%'>课程ID</th>
+				<th width='15%'>操作</th>
+			</tr>
+			<volist name='data' id='vo'>
+				<tr align="center">
+					<td><{$vo.NoteID}></td>
+					<td><{$vo.NoteTitle}></td>
+					<td><{$vo.NoteContent}></td>
+					<td><{$vo.NoteTime}></td>
+					<td><{$vo.UserID}></td>
+					<td><{$vo.ClassID}></td>
+					<td><a href="__URL__/delete/id/<{$vo.NoteID}>">删除</a> | <a href="__URL__/modify/id/<{$vo.NoteID}>">修改</a></td>
+				</tr>
+			</volist>
+		</table>
+	</body>
+</html>

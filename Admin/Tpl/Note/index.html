@@ -1,0 +1,27 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="/ThinkPHP__CSS__/common.css" />
+	<link rel="stylesheet" type="text/css" href="/ThinkPHP__CSS__/note_idx.css" />
+	<link rel="stylesheet" type="text/css" href="/ThinkPHP__CSS__/my_note.css" />
+	<script type="text/javascript" src = "/ThinkPHP__JS__/common.js"></script>
+	<script type="text/javascript" src = "/ThinkPHP__JS__/my_note2.js"></script>
+	<script type="text/javascript" src = "/ThinkPHP__JS__/jquery-1.9.0.min.js"></script>
+	</head>
+	<body>
+		<div id = "frame" class = "center">
+			<div id = "content">
+				<ul id = "con-content">
+					<volist name = "data" id = "list">
+					<li>
+						<span class = "icon block"><{$list['note']['time']}></span>
+						<span class = "title block"><{$list['note']['title']}></span>
+						<span onclick='window.location = "__URL__/deleteNote/id/<{$list['note']['id']}>"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除 |</span>
+						<span onclick='window.location = "__URL__/detail/id/<{$list['note']['id']}>"'>&nbsp;查看 |</span>
+						<span onclick='window.location = "__URL__/update/id/<{$list['note']['id']}>"'>&nbsp;编辑</span>					
+					</li>
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
